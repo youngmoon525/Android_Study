@@ -8,16 +8,19 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.new03_recyclerpager.pager.PagerActivity;
 import com.example.new03_recyclerpager.recycler.RecyclerActivity;
+import com.example.new03_recyclerpager.recycler.RecyclerTestActivity;
 
 public class MainActivity extends AppCompatActivity {
-    Button btn1 , btn2;
+    Button btn1 , btn2 , btn3;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         btn1 = findViewById(R.id.btn1);
         btn2 = findViewById(R.id.btn2);
+        btn3 = findViewById(R.id.btn3);
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -32,7 +35,17 @@ public class MainActivity extends AppCompatActivity {
                 // RecyclerActivity로 이동=>???
                 // 액티비티간 이동 Intent <- 객체를 이용해서 함.
                 //생성시 지금위치 , 이동할 위치의 클래스
-                Intent intent = new Intent(MainActivity.this , RecyclerActivity.class);
+                Intent intent = new Intent(MainActivity.this , RecyclerTestActivity.class);
+                startActivity(intent);
+            }
+        });
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // RecyclerActivity로 이동=>???
+                // 액티비티간 이동 Intent <- 객체를 이용해서 함.
+                //생성시 지금위치 , 이동할 위치의 클래스
+                Intent intent = new Intent(MainActivity.this , PagerActivity.class);
                 startActivity(intent);
             }
         });

@@ -4,8 +4,14 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Study_Android/WorkSpace/New03_RecyclerPager/app/src/main/res/layout/activity_main.xml" value="0.2578125" />
+        <entry key="..\:/Study_Android/WorkSpace/New03_RecyclerPager/app/src/main/res/layout/activity_pager.xml" value="0.196875" />
         <entry key="..\:/Study_Android/WorkSpace/New03_RecyclerPager/app/src/main/res/layout/activity_recycler.xml" value="0.27239583333333334" />
+        <entry key="..\:/Study_Android/WorkSpace/New03_RecyclerPager/app/src/main/res/layout/activity_recycler_test.xml" value="0.27239583333333334" />
+        <entry key="..\:/Study_Android/WorkSpace/New03_RecyclerPager/app/src/main/res/layout/fragment_fragemnt1.xml" value="0.18229166666666666" />
+        <entry key="..\:/Study_Android/WorkSpace/New03_RecyclerPager/app/src/main/res/layout/fragment_fragemnt2.xml" value="0.196875" />
+        <entry key="..\:/Study_Android/WorkSpace/New03_RecyclerPager/app/src/main/res/layout/fragment_fragemnt3.xml" value="0.196875" />
         <entry key="..\:/Study_Android/WorkSpace/New03_RecyclerPager/app/src/main/res/layout/recycleritem.xml" value="0.27239583333333334" />
+        <entry key="..\:/Study_Android/WorkSpace/New03_RecyclerPager/app/src/main/res/layout/recycleritem2.xml" value="0.27239583333333334" />
       </map>
     </option>
   </component>
