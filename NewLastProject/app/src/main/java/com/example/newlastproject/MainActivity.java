@@ -57,8 +57,27 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.btn4).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ArrayList<String> list = new ArrayList<>();
-                AskTest2 askTest2 = new AskTest2("test" , list);
+
+                AskTest2 askTest2 = new AskTest2("test");
+                askTest2.params.add("id1");//param1
+                askTest2.params.add("pw2");
+                askTest2.params.add("pw3");
+                askTest2.params.add("pw4");
+                askTest2.params.add("pw5");
+                askTest2.params.add("pw6");
+                askTest2.params.add("pw7");//param7
+                askTest2.params.add("pw7");//param7
+                askTest2.params.add("pw7");//param7
+                askTest2.params.add("pw7");//param7
+                askTest2.params.add("pw7");//param7
+                askTest2.params.add("pw7");//param7
+                askTest2.params.add("pw7");//param7
+                //재활용 => ArrayList에 파라메터를 여러개 추가함.
+                //여러개는 규칙적인 이름을가짐 ex) param1 ~ param10
+                //파라메터의 갯수를 알고있다면 Spring에서도 갯수만큼 for문으로
+                //req.getParameter("param" + i )
+                //파라메터의 이름이 전부타 param + 숫자 이기때문에 어떤값이 들어있는지
+                //잘생각하고 써야하는 단점이 있음
                 askTest2.execute();
             }
         });
