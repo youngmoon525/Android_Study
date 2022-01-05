@@ -61,7 +61,7 @@ public class AskTest2 extends AsyncTask<String,String,InputStream> {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        rtnString(in);
+        //rtnString(in);
         return in;
     }
     //DAO , COMMON 공통으로 사용할 클래스로 이동.

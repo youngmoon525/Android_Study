@@ -7,30 +7,20 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical">
-
-    <Button
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="단순 알람띄우기"
-        android:id="@+id/btn1"/>
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="알람 띄우고 클릭까지"
-        android:id="@+id/btn2"/>
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="많은 글자 알람 띄우기"
-        android:id="@+id/btn3"/>
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:id="@+id/container"/>
+   <com.google.android.material.bottomnavigation.BottomNavigationView
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="1"
+       app:itemIconTint="@drawable/nav_item_color"
+       app:itemTextColor="@drawable/nav_item_color"
+       app:menu="@menu/nav_menu"
+       android:id="@+id/btm_nav"/>
+    <!--채우기 색상이나 , 선택된 색상 , 메뉴 -->
 
 
-    <Button
-        android:layout_marginTop="50dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="어싱크 테스트"
-        android:id="@+id/btn4"/>
 </LinearLayout>
