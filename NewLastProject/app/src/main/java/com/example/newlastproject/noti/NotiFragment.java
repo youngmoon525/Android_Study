@@ -18,7 +18,7 @@ import android.view.ViewGroup;
 
 import com.example.newlastproject.MainActivity;
 import com.example.newlastproject.R;
-import com.example.newlastproject.async.AskTest2;
+import com.example.newlastproject.async.CommonAsk;
 
 public class NotiFragment extends Fragment {
     //1.Notify .. API 알람띄우기 ( 기기 고유값을 알고있는상태에서 WEB->Android )
@@ -68,20 +68,7 @@ public class NotiFragment extends Fragment {
             @Override
             public void onClick(View v) {
 
-                AskTest2 askTest2 = new AskTest2("test");
-                askTest2.params.add("id1");//param1
-                askTest2.params.add("pw2");
-                askTest2.params.add("pw3");
-                askTest2.params.add("pw4");
-                askTest2.params.add("pw5");
-                askTest2.params.add("pw6");
-                askTest2.params.add("pw7");//param7
-                askTest2.params.add("pw7");//param7
-                askTest2.params.add("pw7");//param7
-                askTest2.params.add("pw7");//param7
-                askTest2.params.add("pw7");//param7
-                askTest2.params.add("pw7");//param7
-                askTest2.params.add("pw7");//param7
+                CommonAsk askTest2 = new CommonAsk("test");
                 //재활용 => ArrayList에 파라메터를 여러개 추가함.
                 //여러개는 규칙적인 이름을가짐 ex) param1 ~ param10
                 //파라메터의 갯수를 알고있다면 Spring에서도 갯수만큼 for문으로

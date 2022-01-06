@@ -1,6 +1,8 @@
 package com.example.newlastproject.customer;
 
-public class CustomerVO {
+import java.io.Serializable;
+
+public class CustomerVO implements Serializable {
 	private int id, no;
 	private String name, gender, email, phone;
 	

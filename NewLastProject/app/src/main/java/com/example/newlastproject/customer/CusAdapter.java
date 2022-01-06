@@ -69,7 +69,9 @@ public class CusAdapter extends RecyclerView.Adapter<CusAdapter.Viewholder> {
                 @Override
                 public void onClick(View v) {
                     //Detail로 이동 , Detail에서 추가 수정 삭제.
-                    Intent intent = new Intent(context, LoginActivity.class);
+                    Intent intent = new Intent(context, DetailActivity.class);
+                    intent.putExtra("vo" , list.get(position));
+                   // intent.putExtra("id" , list.get(position).getId());
                     context.startActivity(intent);
                 }
             });
