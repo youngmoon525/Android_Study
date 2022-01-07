@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.example.newlastproject.LoginActivity;
+import com.example.newlastproject.member.LoginActivity;
 import com.example.newlastproject.R;
 
 public class NotiActivity extends AppCompatActivity {

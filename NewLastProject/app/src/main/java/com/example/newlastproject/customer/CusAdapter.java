@@ -11,7 +11,6 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.newlastproject.LoginActivity;
 import com.example.newlastproject.R;
 
 import java.util.ArrayList;

@@ -1,10 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.newlastproject">
+    package="com.example.newlastproject" >
 
+    <!--인터넷 권한-->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <!--저장소와 카메라 권한 별도의 동의가 메소드로 필요함※-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera2"
+        android:required="true"/>
+
+
+
+    <!--API30이상부터는 queries라는 권한부여를 받는 처리가 한번 더 생김-->
+    <queries>
+        <!-- WebView -->
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <category android:name="android.intent.category.BROWSABLE" />
+            <data android:scheme="http" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <category android:name="android.intent.category.BROWSABLE" />
+            <data android:scheme="https" />
+        </intent>
+
+        <!-- Camera -->
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+
+        <!-- Gallery -->
+        <intent>
+            <action android:name="android.intent.action.GET_CONTENT" />
+        </intent>
+
+        <!-- Youtube -->
+        <intent>
+            <action android:name="android.media.browse.MediaBrowserService" />
+        </intent>
+    </queries>
+
+
 
     <application
         android:allowBackup="true"
@@ -13,11 +57,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.NewLastProject"
-        android:usesCleartextTraffic="true">
+        android:usesCleartextTraffic="true" >
         <activity
-            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog"
-            android:name=".customer.DetailActivity"
+            android:name=".member.JoinActivity"
             android:exported="false" />
+        <activity
+            android:name=".customer.DetailActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog" />
 
         <uses-library
             android:name="org.apache.http.legacy"
@@ -27,7 +74,7 @@
             android:name=".noti.NotiActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".member.LoginActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -40,11 +87,11 @@
             android:exported="false"
             android:theme="@style/Theme.AppCompat.transparent" />
         <activity
-            android:name=".LoginActivity"
-            android:exported="false"/>
+            android:name=".MainActivity"
+            android:exported="false" />
         <activity
             android:name="com.kakao.sdk.auth.AuthCodeHandlerActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 
@@ -57,6 +104,18 @@
                     android:scheme="kakaoe766cd38a872d87544668acaec7d0407" />
             </intent-filter>
         </activity>
+        <provider
+            android:authorities="${applicationId}.fileprovider"
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepath"
+                />
+
+        </provider>
+
     </application>
 
 </manifest>

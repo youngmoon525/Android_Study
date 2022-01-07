@@ -24,12 +24,32 @@ public class CustomerDAO {
     public ArrayList<CustomerVO> list(){
         service = new CommonAsk("list.cu");
         InputStream in = CommonMethod.excuteAsk(service);
+        ArrayList<CustomerVO> list  = new ArrayList<>();
+        try{
 
-        ArrayList<CustomerVO> list
-                = gson.fromJson(new InputStreamReader(in), new TypeToken< List<CustomerVO> >(){}.getType());
+
+
+            list    = gson.fromJson(new InputStreamReader(in), new TypeToken< List<CustomerVO> >(){}.getType());
+        }catch (Exception e){
+
+        }
         return  list;
     }
+    public ArrayList<CustomerVO> list(String search){
+        service = new CommonAsk("list.cu");
+        service.params.add(new AskParam("search" , search));
+        InputStream in = CommonMethod.excuteAsk(service);
+        ArrayList<CustomerVO> list  = new ArrayList<>();
+        try{
 
+
+
+            list    = gson.fromJson(new InputStreamReader(in), new TypeToken< List<CustomerVO> >(){}.getType());
+        }catch (Exception e){
+
+        }
+        return  list;
+    }
     public void delete(String id){
         service = new CommonAsk("delete.cu");
         service.params.add(new AskParam("id", id));
