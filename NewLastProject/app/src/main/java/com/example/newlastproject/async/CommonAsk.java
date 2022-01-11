@@ -5,13 +5,17 @@ import android.os.AsyncTask;
 import android.widget.Toast;
 
 
+import org.apache.http.HttpEntity;
+import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.ContentType;
 import org.apache.http.entity.mime.HttpMultipartMode;
 import org.apache.http.entity.mime.MultipartEntityBuilder;
+import org.apache.http.entity.mime.content.FileBody;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -22,7 +26,8 @@ public class CommonAsk extends AsyncTask<String,String,InputStream> {
     private static final String TAG = "common";
     HttpClient httpClient;//접속을 위한객체
     HttpPost httpPost; //url을 담을 객체
-
+    HttpResponse httpResponse;
+    HttpEntity httpEntity;
     MultipartEntityBuilder builder;//파라메터,파일 등등을 보내기위한 객체
     final String HTTPIP = "http://192.168.0.60";//IP
     final String SVRPATH = "/mid/"; //
@@ -30,10 +35,12 @@ public class CommonAsk extends AsyncTask<String,String,InputStream> {
     private String postUrl ;//
 
     public ArrayList<AskParam> params ;
+    public ArrayList<AskParam> fileParams;
 
     public CommonAsk(String mapping ) {
         this.mapping = mapping;
         params =new ArrayList<>();
+        fileParams = new ArrayList<>();
     }
     //어싱크테스크를 excute(실행) ↓
     @Override
@@ -47,6 +54,10 @@ public class CommonAsk extends AsyncTask<String,String,InputStream> {
         for(int i = 0; i < params.size() ; i ++){
             builder.addTextBody(params.get(i).getKey() , params.get(i).getValue() ,
                     ContentType.create("Multipart/related" , "UTF-8"));
+        }
+        for(int i = 0 ; i < fileParams.size() ; i++){
+            builder.addPart(fileParams.get(i).getKey(),
+                             new FileBody(new File(fileParams.get(i).getValue() )));
         }
 
         httpClient = AndroidHttpClient.newInstance("Android");

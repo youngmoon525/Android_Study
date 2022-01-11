@@ -6,9 +6,10 @@ import java.io.InputStream;
 import java.util.concurrent.ExecutionException;
 
 public class CommonMethod {
-
+    static InputStream in = null;
     public static InputStream excuteAsk(AsyncTask<String,String,InputStream> ask){
-        InputStream in = null ;
+
+
         try {
             in = ask.execute().get();
         } catch (ExecutionException e) {
@@ -16,6 +17,7 @@ public class CommonMethod {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+
         return in;
     }
 }

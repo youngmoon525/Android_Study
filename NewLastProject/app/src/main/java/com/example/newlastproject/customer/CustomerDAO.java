@@ -9,6 +9,8 @@ import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
 
+import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
@@ -31,7 +33,7 @@ public class CustomerDAO {
 
             list    = gson.fromJson(new InputStreamReader(in), new TypeToken< List<CustomerVO> >(){}.getType());
         }catch (Exception e){
-
+            e.printStackTrace();
         }
         return  list;
     }
@@ -46,7 +48,7 @@ public class CustomerDAO {
 
             list    = gson.fromJson(new InputStreamReader(in), new TypeToken< List<CustomerVO> >(){}.getType());
         }catch (Exception e){
-
+          e.printStackTrace();
         }
         return  list;
     }
@@ -62,5 +64,24 @@ public class CustomerDAO {
         service.params.add(new AskParam("vo",str));
         CommonMethod.excuteAsk(service);
         //CustomerVO vott = gson.fromJson(dto,CustomerVO.class);
+    }
+
+    //DAO , COMMON 공통으로 사용할 클래스로 이동.
+    public String rtnString(InputStream inputStream)  {
+        try{
+
+
+            BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
+            StringBuilder stringBuilder = new StringBuilder();
+            String line = null;
+            while( (line = reader.readLine()) != null  ){
+                stringBuilder.append( line + "\n");
+            }
+
+            return stringBuilder.toString();
+        }catch (IOException e){
+
+        }
+        return "";
     }
 }
