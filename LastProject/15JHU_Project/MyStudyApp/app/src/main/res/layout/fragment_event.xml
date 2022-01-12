@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:textSize="57px"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:text="내 이벤트"/>
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="20dp"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:src="@drawable/down"/>
+        </LinearLayout>
+        <View
+            android:background="#cfcdca"
+            android:layout_width="match_parent"
+            android:layout_height="2px"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="50px"
+                android:textStyle="bold"
+                android:textColor="#b3b3b3"
+                android:gravity="center"
+                android:text="참여한 이벤트가 없습니다."/>
+
+        </LinearLayout>
+        <View
+            android:background="#cfcdca"
+            android:layout_width="match_parent"
+            android:layout_height="2px"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:weightSum="3"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:textSize="57px"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:text="전체 이벤트"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                android:text="* 지난 이벤트는 표시되지 않습니다."/>
+
+        </LinearLayout>
+        <View
+            android:background="#cfcdca"
+            android:layout_width="match_parent"
+            android:layout_height="2px"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:scrollbars="none"
+            android:layout_marginLeft="9dp"
+            android:layout_marginRight="9dp"
+            android:layout_height="70dp">
+            <LinearLayout
+                android:layout_marginTop="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:paddingBottom="5dp"
+                    android:textColor="#b86e51"
+                    android:textStyle="bold"
+                    android:paddingTop="5dp"
+                    android:background="@drawable/button"
+                    android:text="사교/인맥"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:paddingBottom="5dp"
+                    android:textColor="#b86e51"
+                    android:textStyle="bold"
+                    android:paddingTop="5dp"
+                    android:background="@drawable/button"
+                    android:text="취미/여가"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:paddingBottom="5dp"
+                    android:textColor="#b86e51"
+                    android:textStyle="bold"
+                    android:paddingTop="5dp"
+                    android:background="@drawable/button"
+                    android:text="연애/데이팅"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:paddingBottom="5dp"
+                    android:textColor="#b86e51"
+                    android:textStyle="bold"
+                    android:paddingTop="5dp"
+                    android:background="@drawable/button"
+                    android:text="운동/스포츠"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:paddingBottom="5dp"
+                    android:textColor="#b86e51"
+                    android:textStyle="bold"
+                    android:paddingTop="5dp"
+                    android:background="@drawable/button"
+                    android:text="문화/공연"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:paddingBottom="5dp"
+                    android:textColor="#b86e51"
+                    android:textStyle="bold"
+                    android:paddingTop="5dp"
+                    android:background="@drawable/button"
+                    android:text="인플루언서"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:paddingBottom="5dp"
+                    android:textColor="#b86e51"
+                    android:textStyle="bold"
+                    android:paddingTop="5dp"
+                    android:background="@drawable/button"
+                    android:text="팬클럽"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:paddingBottom="5dp"
+                    android:textColor="#b86e51"
+                    android:textStyle="bold"
+                    android:paddingTop="5dp"
+                    android:background="@drawable/button"
+                    android:text="게임/오락"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:paddingBottom="5dp"
+                    android:textColor="#b86e51"
+                    android:textStyle="bold"
+                    android:paddingTop="5dp"
+                    android:background="@drawable/button"
+                    android:text="맛집/요리"/>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+        <Button
+            android:layout_marginTop="-5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:backgroundTint="#ffebe3"
+            android:textStyle="bold"
+            android:textColor="#b86e51"
+            android:text="22년 01월 10일 (월)"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/RecEvent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</FrameLayout>

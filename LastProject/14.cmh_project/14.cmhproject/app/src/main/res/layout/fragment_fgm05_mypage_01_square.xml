@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".fgm.fgm05_mypage_01_square">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:background="#888888"
+            android:layout_width="135dp"
+            android:layout_height="135dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_mail" />
+
+        <ImageView
+            android:background="#888888"
+            android:layout_width="135dp"
+            android:layout_height="135dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_mail" />
+
+        <ImageView
+            android:background="#888888"
+            android:layout_width="135dp"
+            android:layout_height="135dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_mail" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:background="#888888"
+            android:layout_width="135dp"
+            android:layout_height="135dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_mail" />
+
+        <ImageView
+            android:background="#888888"
+            android:layout_width="135dp"
+            android:layout_height="135dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_mail" />
+
+        <ImageView
+            android:background="#888888"
+            android:layout_width="135dp"
+            android:layout_height="135dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_mail" />
+    </LinearLayout>    <LinearLayout
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:background="#888888"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:layout_margin="1dp"
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_mail" />
+
+    <ImageView
+        android:background="#888888"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:layout_margin="1dp"
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_mail" />
+
+    <ImageView
+        android:background="#888888"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:layout_margin="1dp"
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_mail" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:background="#888888"
+            android:layout_width="135dp"
+            android:layout_height="135dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_mail" />
+
+        <ImageView
+            android:background="#888888"
+            android:layout_width="135dp"
+            android:layout_height="135dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_mail" />
+
+        <ImageView
+            android:background="#888888"
+            android:layout_width="135dp"
+            android:layout_height="135dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_mail" />
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

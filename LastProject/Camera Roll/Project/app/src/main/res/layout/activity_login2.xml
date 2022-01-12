@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity2"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+    <ImageView
+        android:id="@+id/login_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAlignBottom="true"
+        android:src="@drawable/img_1" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+            <EditText
+
+                android:layout_marginTop="200dp"
+                android:textSize="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="email"
+                android:textColorHint="#C8B1B1"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+
+            <EditText
+
+                android:textSize="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="password"
+                android:textColorHint="#C8B1B1"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:id="@+id/login_main"
+            android:text="please Sign Up"
+            android:background="#5C583C"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="35dp"/>
+        <Button
+
+            android:id="@+id/login_main2"
+            android:text="FaceBook Login"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="#EFE9E9"
+            android:background="@drawable/btn_signin_facebook"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"/>
+
+        <Button
+            android:id="@+id/login_main3"
+            android:text="Google Login"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:background="@drawable/btn_signin_google"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="35dp"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

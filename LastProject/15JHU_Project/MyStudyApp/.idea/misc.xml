@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/StudyAndroid/MyStudyApp/app/src/main/res/drawable/button.xml" value="0.10555555555555556" />
+        <entry key="..\:/StudyAndroid/MyStudyApp/app/src/main/res/drawable/image_border.xml" value="0.10092592592592593" />
+        <entry key="..\:/StudyAndroid/MyStudyApp/app/src/main/res/drawable/img.xml" value="0.10092592592592593" />
+        <entry key="..\:/StudyAndroid/MyStudyApp/app/src/main/res/layout/activity_main.xml" value="0.176" />
+        <entry key="..\:/StudyAndroid/MyStudyApp/app/src/main/res/layout/activity_search.xml" value="0.11302083333333333" />
+        <entry key="..\:/StudyAndroid/MyStudyApp/app/src/main/res/layout/activity_splash.xml" value="0.11302083333333333" />
+        <entry key="..\:/StudyAndroid/MyStudyApp/app/src/main/res/layout/fragment_chat.xml" value="0.1" />
+        <entry key="..\:/StudyAndroid/MyStudyApp/app/src/main/res/layout/fragment_event.xml" value="0.17527173913043478" />
+        <entry key="..\:/StudyAndroid/MyStudyApp/app/src/main/res/layout/fragment_home.xml" value="0.136" />
+        <entry key="..\:/StudyAndroid/MyStudyApp/app/src/main/res/layout/fragment_profile.xml" value="0.176" />
+        <entry key="..\:/StudyAndroid/MyStudyApp/app/src/main/res/layout/recycle_event_item.xml" value="0.22105263157894736" />
+        <entry key="..\:/StudyAndroid/MyStudyApp/app/src/main/res/layout/recycle_item.xml" value="0.176" />
+        <entry key="..\:/StudyAndroid/MyStudyApp/app/src/main/res/menu/bottom_menu.xml" value="0.2" />
+        <entry key="..\:/StudyAndroid/MyStudyApp/app/src/main/res/xml/animation.xml" value="0.11302083333333333" />
+        <entry key="..\:/StudyAndroid/MyStudyApp/app/src/main/res/xml/animation_enter.xml" value="0.11302083333333333" />
+        <entry key="..\:/StudyAndroid/MyStudyApp/app/src/main/res/xml/animation_not.xml" value="0.11302083333333333" />
+        <entry key="..\:/Study_Android/WorkSpace/MyStudyApp/app/src/main/res/drawable/button.xml" value="0.11388888888888889" />
+        <entry key="..\:/Study_Android/WorkSpace/MyStudyApp/app/src/main/res/drawable/edit_border.xml" value="0.11388888888888889" />
+        <entry key="..\:/Study_Android/WorkSpace/MyStudyApp/app/src/main/res/drawable/img.xml" value="0.11388888888888889" />
+        <entry key="..\:/Study_Android/WorkSpace/MyStudyApp/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Study_Android/WorkSpace/MyStudyApp/app/src/main/res/layout/activity_search.xml" value="0.1" />
+        <entry key="..\:/Study_Android/WorkSpace/MyStudyApp/app/src/main/res/layout/activity_splash.xml" value="0.1" />
+        <entry key="..\:/Study_Android/WorkSpace/MyStudyApp/app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="..\:/Study_Android/WorkSpace/MyStudyApp/app/src/main/res/layout/fragment_profile.xml" value="0.1" />
+        <entry key="..\:/Study_Android/WorkSpace/MyStudyApp/app/src/main/res/layout/recycle_event_item.xml" value="0.1" />
+        <entry key="..\:/Study_Android/WorkSpace/MyStudyApp/app/src/main/res/layout/recycle_item.xml" value="0.22" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

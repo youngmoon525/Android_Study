@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <item
+        android:id="@+id/menu_fav"
+        android:title="즐겨찾기"
+        android:icon="@drawable/star"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/menu_bus"
+        android:title="정류장"
+        android:icon="@drawable/bus"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/menu_route"
+        android:title="노선"
+        android:icon="@drawable/route3"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/menu_trans"
+        android:title="환승"
+        android:icon="@drawable/transfer"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/menu_etc"
+        android:title="더보기"
+        android:icon="@drawable/etc"
+        app:showAsAction="always"/>
+</menu>

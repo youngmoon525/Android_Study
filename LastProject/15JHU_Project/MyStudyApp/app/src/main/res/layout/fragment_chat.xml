@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="70px"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#303030"
+                android:text="채팅"/>
+        </LinearLayout>
+        <View
+            android:background="#cfcdca"
+            android:layout_width="match_parent"
+            android:layout_height="2px"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:textSize="65px"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:textColor="#474747"
+            android:textStyle="bold"
+            android:text="모임"/>
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:src="@drawable/down"/>
+    </LinearLayout>
+    <View
+        android:background="#cfcdca"
+        android:layout_width="match_parent"
+        android:layout_height="2px"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="50px"
+            android:textStyle="bold"
+            android:textColor="#b3b3b3"
+            android:gravity="center"
+            android:text="입장한 모임이 없습니다."/>
+
+    </LinearLayout>
+    <View
+        android:background="#cfcdca"
+        android:layout_width="match_parent"
+        android:layout_height="2px"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:textSize="65px"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:textColor="#474747"
+                android:textStyle="bold"
+                android:text="이벤트"/>
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="20dp"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:src="@drawable/down"/>
+        </LinearLayout>
+        <View
+            android:background="#cfcdca"
+            android:layout_width="match_parent"
+            android:layout_height="2px"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="50px"
+                android:textStyle="bold"
+                android:textColor="#b3b3b3"
+                android:gravity="center"
+                android:text="참여한 이벤트가 없습니다."/>
+
+        </LinearLayout>
+        <View
+            android:background="#cfcdca"
+            android:layout_width="match_parent"
+            android:layout_height="2px"/>
+    </LinearLayout>
+
+</FrameLayout>
