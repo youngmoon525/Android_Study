@@ -42,6 +42,9 @@ public class CommonAsk extends AsyncTask<String,String,InputStream> {
         params =new ArrayList<>();
         fileParams = new ArrayList<>();
     }
+    public void addParams(String key , String value){
+        this.params.add(new AskParam(key , value));
+    }
     //어싱크테스크를 excute(실행) ↓
     @Override
     protected InputStream doInBackground(String... strings) {

@@ -64,7 +64,7 @@
         android:layout_height="wrap_content"
         android:text="로그인"
         android:id="@+id/btn_login"
-        android:background="@drawable/kakaoimg"
+
         />
     <ImageView
         android:layout_marginTop="10dp"

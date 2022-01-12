@@ -14,12 +14,19 @@ import android.widget.Toast;
 
 import com.example.newlastproject.MainActivity;
 import com.example.newlastproject.R;
+import com.example.newlastproject.async.AskParam;
+import com.example.newlastproject.async.CommonAsk;
+import com.example.newlastproject.async.CommonMethod;
+import com.example.newlastproject.async.CommonVal;
 import com.example.newlastproject.transactivity.TransActivity;
+import com.google.gson.Gson;
 import com.kakao.sdk.auth.model.OAuthToken;
 import com.kakao.sdk.common.KakaoSdk;
 import com.kakao.sdk.user.UserApiClient;
 import com.kakao.sdk.user.model.Account;
 import com.kakao.sdk.user.model.Profile;
+
+import java.io.InputStreamReader;
 
 import kotlin.Unit;
 import kotlin.jvm.functions.Function2;
@@ -56,12 +63,17 @@ public class LoginActivity extends AppCompatActivity {
         btn_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // edt_id <- 글자 EditText.getText()<-
-                if( (edt_id.getText()+"").equals("aaabb") &&  (edt_pw.getText()+"").equals("aaa") ){
-                    Toast.makeText(LoginActivity.this, "로그인 되었습니다.", Toast.LENGTH_SHORT).show();
+                CommonAsk ask = new CommonAsk("login");
+               ask.addParams("id" , edt_id.getText() + "");
+               ask.addParams("pw" , edt_id.getText() + "");
+                Gson gson = new Gson();
+                CommonVal.loginInfo =
+                        gson.fromJson(new InputStreamReader(CommonMethod.excuteAsk(ask))
+                        , MemberVO.class);
+                if(CommonVal.loginInfo != null){
                     goMain();
                 }else{
-                    Toast.makeText(LoginActivity.this, "아이디,비밀번호 틀림.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginActivity.this, "아디 비번 다시확인", Toast.LENGTH_SHORT).show();
                 }
             }
         });
