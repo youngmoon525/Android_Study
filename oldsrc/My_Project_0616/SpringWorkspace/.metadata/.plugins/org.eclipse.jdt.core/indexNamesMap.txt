@@ -1,3 +1,0 @@
-INDEX VERSION 1.131
-file:/D:/CSS30/Study_Android/My_Project_0616/SpringWorkspace/.metadata/.plugins/org.eclipse.jdt.core/1865797976.index
-meta_index

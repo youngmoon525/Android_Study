@@ -1,5 +1,0 @@
-INDEX VERSION 1.4+D:\CSS30\Study_Android\My_Project_0616\SpringWorkspace\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-3988032030.index
-796953187.index
-757103036.index
-2582367309.index
